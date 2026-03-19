@@ -60,7 +60,7 @@ def classify_event(text):
         for kw in keywords:
             if kw in text:
                 return calendar_name
-    return '06_オペ'
+    return '05_外部MTG'
 
 
 def extract_title(text):
