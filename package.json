@@ -1,0 +1,9 @@
+{
+  "name": "apotool-sync",
+  "version": "1.0.0",
+  "description": "Apotool → Google Calendar 自動同期",
+  "private": false,
+  "dependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}

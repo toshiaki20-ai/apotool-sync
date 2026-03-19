@@ -1,0 +1,62 @@
+name: 全体同期（毎日2:00）
+
+on:
+  schedule:
+    # 毎日 2:00 JST = UTC 17:00
+    - cron: '0 17 * * *'
+  workflow_dispatch:  # 手動実行ボタン
+
+env:
+  TZ: Asia/Tokyo
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: コードを取得
+        uses: actions/checkout@v4
+
+      - name: Node.js セットアップ
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存パッケージをインストール
+        run: |
+          npm install puppeteer
+          pip install google-api-python-client google-auth google-auth-httplib2
+
+      - name: 対象期間を計算（本日〜13ヶ月先）
+        id: range
+        run: |
+          START_Y=$(date +%Y)
+          START_M=$(date +%-m)
+          END_DATE=$(date -d "+13 months" +%Y-%-m)
+          END_Y=$(echo $END_DATE | cut -d- -f1)
+          END_M=$(echo $END_DATE | cut -d- -f2)
+          echo "start_y=$START_Y" >> $GITHUB_OUTPUT
+          echo "start_m=$START_M" >> $GITHUB_OUTPUT
+          echo "end_y=$END_Y" >> $GITHUB_OUTPUT
+          echo "end_m=$END_M" >> $GITHUB_OUTPUT
+          echo "範囲: ${START_Y}/${START_M} 〜 ${END_Y}/${END_M}"
+
+      - name: Apotoolからデータ取得
+        env:
+          APOTOOL_EMAIL: ${{ secrets.APOTOOL_EMAIL }}
+          APOTOOL_PASSWORD: ${{ secrets.APOTOOL_PASSWORD }}
+          OUTPUT_FILE: /tmp/apotool_data.json
+        run: |
+          node scrape.js ${{ steps.range.outputs.start_y }} ${{ steps.range.outputs.start_m }} ${{ steps.range.outputs.end_y }} ${{ steps.range.outputs.end_m }}
+
+      - name: Googleカレンダーに同期
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: |
+          python sync_calendar.py /tmp/apotool_data.json
