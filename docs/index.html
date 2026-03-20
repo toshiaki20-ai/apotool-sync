@@ -1,1 +1,65 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.1, maximum-scale=10, user-scalable=yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="としあきカレンダー"><title>としあきカレンダー</title><style>  * { margin: 0; padding: 0; box-sizing: border-box; }  body {    background: #f5f5f5;    -webkit-overflow-scrolling: touch;    overflow: auto;  }  .calendar-container {    width: 100%;    overflow: auto;    -webkit-overflow-scrolling: touch;  }  .calendar-container img {    display: block;    width: 100%;    height: auto;    max-width: none;  }  .update-info {    position: fixed;    bottom: 0;    left: 0;    right: 0;    background: rgba(0,0,0,0.7);    color: #fff;    text-align: center;    font-size: 11px;    padding: 4px 8px;    z-index: 100;    pointer-events: none;  }</style></head><body><div class="calendar-container">  <img src="calendar_14m_v9.png" alt="14ヶ月カレンダー"></div><div class="update-info" id="updateInfo"></div><script>  const img = document.querySelector('.calendar-container img');  img.src = 'calendar_14m_v9.png?t=' + Date.now();  const now = new Date();  const jst = new Date(now.getTime() + (9 * 60 * 60 * 1000 - now.getTimezoneOffset() * 60 * 1000));  const fmt = jst.getFullYear() + '/' +    String(jst.getMonth()+1).padStart(2,'0') + '/' +    String(jst.getDate()).padStart(2,'0') + ' ' +    String(jst.getHours()).padStart(2,'0') + ':' +    String(jst.getMinutes()).padStart(2,'0');  document.getElementById('updateInfo').textContent = '閲覧: ' + fmt;  setTimeout(() => {    document.getElementById('updateInfo').style.opacity = '0';    document.getElementById('updateInfo').style.transition = 'opacity 1s';  }, 3000);</script></body></html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.3, minimum-scale=0.05, maximum-scale=20, user-scalable=yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="としあきカレンダー">
+<title>としあきカレンダー</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #f5f5f5;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+  }
+  .calendar-container {
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .calendar-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+  .update-info {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    padding: 4px 8px;
+    z-index: 100;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<div class="calendar-container">
+  <img src="calendar.svg" alt="14ヶ月カレンダー">
+</div>
+<div class="update-info" id="updateInfo"></div>
+<script>
+  const img = document.querySelector('.calendar-container img');
+  img.src = 'calendar.svg?t=' + Date.now();
+  const now = new Date();
+  const jst = new Date(now.getTime() + (9 * 60 * 60 * 1000 - now.getTimezoneOffset() * 60 * 1000));
+  const fmt = jst.getFullYear() + '/' +
+    String(jst.getMonth()+1).padStart(2,'0') + '/' +
+    String(jst.getDate()).padStart(2,'0') + ' ' +
+    String(jst.getHours()).padStart(2,'0') + ':' +
+    String(jst.getMinutes()).padStart(2,'0');
+  document.getElementById('updateInfo').textContent = '閲覧: ' + fmt;
+  setTimeout(() => {
+    document.getElementById('updateInfo').style.opacity = '0';
+    document.getElementById('updateInfo').style.transition = 'opacity 1s';
+  }, 3000);
+</script>
+</body>
+</html>
