@@ -27,11 +27,14 @@
     left: 0;
     transform-origin: 0 0;
     will-change: transform;
+    pointer-events: none;
   }
-  #calendar img,
-  #calendar object {
+  #calendar img {
     display: block;
     max-width: none;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
   }
   #controls {
     position: fixed;
@@ -74,9 +77,7 @@
 <body>
 <div id="container">
   <div id="calendar">
-    <object data="calendar.svg" type="image/svg+xml" id="svgObj">
-      <img src="calendar.svg" alt="14M Calendar" id="svgImg">
-    </object>
+    <img src="calendar.svg" alt="14M Calendar" id="svgImg" draggable="false">
   </div>
 </div>
 
@@ -93,6 +94,7 @@
   var container = document.getElementById('container');
   var cal = document.getElementById('calendar');
   var info = document.getElementById('info');
+  var svgImg = document.getElementById('svgImg');
 
   var scale = 1;
   var panX = 0, panY = 0;
@@ -120,15 +122,8 @@
   function fitToScreen() {
     var cw = container.clientWidth;
     var ch = container.clientHeight;
-    var sw = 4000, sh = 3000;
-    var svgObj = document.getElementById('svgObj');
-    if (svgObj && svgObj.contentDocument) {
-      var svg = svgObj.contentDocument.querySelector('svg');
-      if (svg) {
-        sw = parseFloat(svg.getAttribute('width')) || (svg.viewBox && svg.viewBox.baseVal ? svg.viewBox.baseVal.width : sw) || sw;
-        sh = parseFloat(svg.getAttribute('height')) || (svg.viewBox && svg.viewBox.baseVal ? svg.viewBox.baseVal.height : sh) || sh;
-      }
-    }
+    var sw = svgImg.naturalWidth || 4000;
+    var sh = svgImg.naturalHeight || 3000;
     scale = Math.min(cw / sw, ch / sh);
     panX = (cw - sw * scale) / 2;
     panY = 0;
@@ -231,12 +226,13 @@
     fitToScreen();
   });
 
-  // Initial fit after SVG loads
-  var svgObj = document.getElementById('svgObj');
-  svgObj.addEventListener('load', function() {
+  // Initial fit after SVG image loads
+  svgImg.addEventListener('load', function() {
     fitToScreen();
   });
-  setTimeout(fitToScreen, 2000);
+  if (svgImg.complete) {
+    fitToScreen();
+  }
 })();
 </script>
 </body>
