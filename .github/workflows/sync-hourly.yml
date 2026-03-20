@@ -32,14 +32,14 @@ jobs:
       - name: 依存パッケージをインストール
         run: |
           npm install puppeteer
-          pip install google-api-python-client google-auth google-auth-httplib2
+          pip install google-api-python-client google-auth google-auth-httplib2 jpholiday
 
       - name: 対象期間を計算（本日〜3ヶ月先）
         id: range
         run: |
           START_Y=$(date +%Y)
           START_M=$(date +%-m)
-          END_DATE=$(date -d "+3 months" +%Y-%-m)
+          END_DATE=$(date -d "+3 months" +%Y-%m)
           END_Y=$(echo $END_DATE | cut -d- -f1)
           END_M=$(echo $END_DATE | cut -d- -f2)
           echo "start_y=$START_Y" >> $GITHUB_OUTPUT
@@ -61,3 +61,99 @@ jobs:
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
         run: |
           python sync_calendar.py /tmp/apotool_data.json
+
+      - name: SVGカレンダー用データ取得（全カレンダー14ヶ月分）
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: |
+          python3 - <<'PYEOF'
+          import json, os, datetime
+          from google.oauth2 import service_account
+          from googleapiclient.discovery import build
+
+          CALENDAR_IDS = {
+              '01_個人': 'toshiaki.yoshiokadentaloffice@gmail.com',
+              '02_家族': 'b57c5ad016658231d5fb9897f543eb6c2689609924fdbb5739b6db739a1dde61@group.calendar.google.com',
+              '03_理事長集中時間': 'e6f1ffae6cd0feaaa1ad95e69429993ad572a40f10eab0b289da741bd0c7f5ec@group.calendar.google.com',
+              '04_メンバーMTG': '7f56a02a3fb32f83a3fbca3ea85cc4baf352618fa5232740778038d727e29916@group.calendar.google.com',
+              '05_外部MTG': '265fd000ca3392991d4aaa91c058f9a509b3ee92249a9e40ac0105c1ab03d8c6@group.calendar.google.com',
+              '06_オペ': 'classroom102922097932539509382@group.calendar.google.com',
+              '07_インプラント初診': 'classroom117195644962134754346@group.calendar.google.com',
+              '08_コンサル': '397f3431ad160ae1096522fa079d724a59b27af578fde4cbd5c25e1980a2aa5f@group.calendar.google.com',
+              '09_症例相談・ガイド制作': 'a120f21b197307cd0c0ac33c3401619f6687d55b6378707d6b41f178ed61161f@group.calendar.google.com',
+              '10_勉強会': '16da2e8799c40fb2a29ebdec34ab819251d9e95608ffb3c9c45550e28ff9d842@group.calendar.google.com',
+              '11_ADA公務': '89ab03936e3abfd6778a57583ea0ad468aeb7b321a2b00f4f75552b2e8a15611@group.calendar.google.com',
+              '12_接待': 'd811cc4d57892e108202726d5748824f286b4e06a8030ba7621b9180e50baf09@group.calendar.google.com',
+              '13_雑務': '70d84545ee0505dd826075621a9f17ed218da7703ed05247569f501eda79dedb@group.calendar.google.com',
+          }
+
+          sa_json = json.loads(os.environ['GOOGLE_SERVICE_ACCOUNT_JSON'])
+          creds = service_account.Credentials.from_service_account_info(
+              sa_json, scopes=['https://www.googleapis.com/auth/calendar.readonly']
+          )
+          service = build('calendar', 'v3', credentials=creds)
+
+          today = datetime.date.today()
+          start_date = today.replace(day=1)
+          end_month = start_date.month + 14
+          end_year = start_date.year + (end_month - 1) // 12
+          end_month = ((end_month - 1) % 12) + 1
+          end_date = datetime.date(end_year, end_month, 1)
+
+          time_min = start_date.isoformat() + 'T00:00:00+09:00'
+          time_max = end_date.isoformat() + 'T00:00:00+09:00'
+
+          all_events = []
+          for cal_name, cal_id in CALENDAR_IDS.items():
+              try:
+                  events_result = service.events().list(
+                      calendarId=cal_id,
+                      timeMin=time_min,
+                      timeMax=time_max,
+                      maxResults=2500,
+                      singleEvents=True,
+                      orderBy='startTime'
+                  ).execute()
+                  items = events_result.get('items', [])
+                  for item in items:
+                      start = item.get('start', {})
+                      end = item.get('end', {})
+                      all_day = 'date' in start and 'dateTime' not in start
+                      ev = {
+                          'calendar': cal_name,
+                          'summary': item.get('summary', ''),
+                          'start': start.get('dateTime', start.get('date', '')),
+                          'end': end.get('dateTime', end.get('date', '')),
+                          'allDay': all_day,
+                      }
+                      all_events.append(ev)
+                  print(f"  {cal_name}: {len(items)}件")
+              except Exception as e:
+                  print(f"  {cal_name}: エラー {e}")
+
+          data = {
+              'periodStart': start_date.isoformat(),
+              'periodEnd': end_date.isoformat(),
+              'totalEvents': len(all_events),
+              'events': all_events
+          }
+          with open('/tmp/calendar_data_14m.json', 'w') as f:
+              json.dump(data, f, ensure_ascii=False, indent=2)
+          print(f"取得完了: 合計{len(all_events)}件のイベント")
+          PYEOF
+
+      - name: SVGカレンダーを生成
+        run: |
+          python generate_svg_14m.py /tmp/calendar_data_14m.json docs/calendar.svg
+
+      - name: SVGをGitHub Pagesにコミット
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/calendar.svg
+          if git diff --cached --quiet; then
+            echo "変更なし"
+          else
+            git commit -m "Update calendar SVG $(date '+%Y-%m-%d %H:%M')"
+            git push
+          fi
