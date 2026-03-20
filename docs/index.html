@@ -13,28 +13,27 @@
     background: #1a1a1a;
     touch-action: none;
   }
-  #container {
+  #overlay {
+    position: fixed;
+    top: 0; left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    position: relative;
+    z-index: 10;
     cursor: grab;
+    background: transparent;
   }
-  #container.grabbing { cursor: grabbing; }
+  #overlay.grabbing { cursor: grabbing; }
   #calendar {
     position: absolute;
     top: 0;
     left: 0;
     transform-origin: 0 0;
     will-change: transform;
-    pointer-events: none;
+    z-index: 1;
   }
-  #calendar img {
+  #calendar object {
     display: block;
     max-width: none;
-    pointer-events: none;
-    user-select: none;
-    -webkit-user-drag: none;
   }
   #controls {
     position: fixed;
@@ -75,11 +74,13 @@
 </style>
 </head>
 <body>
-<div id="container">
-  <div id="calendar">
-    <img src="calendar.svg" alt="14M Calendar" id="svgImg" draggable="false">
-  </div>
+
+<div id="calendar">
+  <object data="calendar.svg" type="image/svg+xml" id="svgObj">SVG not supported</object>
 </div>
+
+<!-- Transparent overlay captures all mouse/touch events for drag & zoom -->
+<div id="overlay"></div>
 
 <div id="controls">
   <button id="zoomIn">+</button>
@@ -91,10 +92,10 @@
 
 <script>
 (function() {
-  var container = document.getElementById('container');
+  var overlay = document.getElementById('overlay');
   var cal = document.getElementById('calendar');
   var info = document.getElementById('info');
-  var svgImg = document.getElementById('svgImg');
+  var svgObj = document.getElementById('svgObj');
 
   var scale = 1;
   var panX = 0, panY = 0;
@@ -103,7 +104,7 @@
   var lastPinchDist = 0;
 
   var MIN_SCALE = 0.02;
-  var MAX_SCALE = 8;
+  var MAX_SCALE = 20;
 
   function applyTransform() {
     cal.style.transform = 'translate(' + panX + 'px,' + panY + 'px) scale(' + scale + ')';
@@ -119,35 +120,54 @@
     applyTransform();
   }
 
+  function getSvgSize() {
+    var sw = 4000, sh = 3000;
+    try {
+      var doc = svgObj.contentDocument;
+      if (doc) {
+        var svg = doc.querySelector('svg');
+        if (svg) {
+          var vb = svg.getAttribute('viewBox');
+          if (vb) {
+            var parts = vb.split(/[\s,]+/);
+            sw = parseFloat(parts[2]) || sw;
+            sh = parseFloat(parts[3]) || sh;
+          }
+          if (svg.getAttribute('width')) sw = parseFloat(svg.getAttribute('width')) || sw;
+          if (svg.getAttribute('height')) sh = parseFloat(svg.getAttribute('height')) || sh;
+        }
+      }
+    } catch(e) {}
+    return { w: sw, h: sh };
+  }
+
   function fitToScreen() {
-    var cw = container.clientWidth;
-    var ch = container.clientHeight;
-    var sw = svgImg.naturalWidth || 4000;
-    var sh = svgImg.naturalHeight || 3000;
-    scale = Math.min(cw / sw, ch / sh);
-    panX = (cw - sw * scale) / 2;
+    var cw = window.innerWidth;
+    var ch = window.innerHeight;
+    var size = getSvgSize();
+    scale = Math.min(cw / size.w, ch / size.h);
+    panX = (cw - size.w * scale) / 2;
     panY = 0;
     applyTransform();
   }
 
   // Mouse wheel zoom (PC)
-  container.addEventListener('wheel', function(e) {
+  overlay.addEventListener('wheel', function(e) {
     e.preventDefault();
-    var rect = container.getBoundingClientRect();
-    var cx = e.clientX - rect.left;
-    var cy = e.clientY - rect.top;
+    var cx = e.clientX;
+    var cy = e.clientY;
     var factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
     zoomAt(cx, cy, factor);
   }, { passive: false });
 
   // Mouse drag (PC)
-  container.addEventListener('mousedown', function(e) {
+  overlay.addEventListener('mousedown', function(e) {
     isDragging = true;
     startX = e.clientX;
     startY = e.clientY;
     startPanX = panX;
     startPanY = panY;
-    container.classList.add('grabbing');
+    overlay.classList.add('grabbing');
     e.preventDefault();
   });
   window.addEventListener('mousemove', function(e) {
@@ -158,11 +178,11 @@
   });
   window.addEventListener('mouseup', function() {
     isDragging = false;
-    container.classList.remove('grabbing');
+    overlay.classList.remove('grabbing');
   });
 
   // Touch: drag + pinch zoom (iPhone/mobile)
-  container.addEventListener('touchstart', function(e) {
+  overlay.addEventListener('touchstart', function(e) {
     if (e.touches.length === 1) {
       isDragging = true;
       startX = e.touches[0].clientX;
@@ -178,7 +198,7 @@
     e.preventDefault();
   }, { passive: false });
 
-  container.addEventListener('touchmove', function(e) {
+  overlay.addEventListener('touchmove', function(e) {
     if (e.touches.length === 1 && isDragging) {
       panX = startPanX + (e.touches[0].clientX - startX);
       panY = startPanY + (e.touches[0].clientY - startY);
@@ -189,9 +209,8 @@
       var dist = Math.sqrt(dx * dx + dy * dy);
       if (lastPinchDist > 0) {
         var factor = dist / lastPinchDist;
-        var rect = container.getBoundingClientRect();
-        var cx = (e.touches[0].clientX + e.touches[1].clientX) / 2 - rect.left;
-        var cy = (e.touches[0].clientY + e.touches[1].clientY) / 2 - rect.top;
+        var cx = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+        var cy = (e.touches[0].clientY + e.touches[1].clientY) / 2;
         zoomAt(cx, cy, factor);
       }
       lastPinchDist = dist;
@@ -199,40 +218,35 @@
     e.preventDefault();
   }, { passive: false });
 
-  container.addEventListener('touchend', function(e) {
+  overlay.addEventListener('touchend', function(e) {
     if (e.touches.length < 2) lastPinchDist = 0;
     if (e.touches.length === 0) isDragging = false;
   });
 
   // Double-click/tap to zoom in
-  container.addEventListener('dblclick', function(e) {
-    var rect = container.getBoundingClientRect();
-    zoomAt(e.clientX - rect.left, e.clientY - rect.top, 2);
+  overlay.addEventListener('dblclick', function(e) {
+    zoomAt(e.clientX, e.clientY, 2);
   });
 
-  // Buttons
+  // Buttons (z-index above overlay)
   document.getElementById('zoomIn').addEventListener('click', function(e) {
     e.stopPropagation();
-    var rect = container.getBoundingClientRect();
-    zoomAt(rect.width / 2, rect.height / 2, 1.5);
+    zoomAt(window.innerWidth / 2, window.innerHeight / 2, 1.5);
   });
   document.getElementById('zoomOut').addEventListener('click', function(e) {
     e.stopPropagation();
-    var rect = container.getBoundingClientRect();
-    zoomAt(rect.width / 2, rect.height / 2, 1 / 1.5);
+    zoomAt(window.innerWidth / 2, window.innerHeight / 2, 1 / 1.5);
   });
   document.getElementById('zoomFit').addEventListener('click', function(e) {
     e.stopPropagation();
     fitToScreen();
   });
 
-  // Initial fit after SVG image loads
-  svgImg.addEventListener('load', function() {
+  // Initial fit after SVG loads
+  svgObj.addEventListener('load', function() {
     fitToScreen();
   });
-  if (svgImg.complete) {
-    fitToScreen();
-  }
+  setTimeout(fitToScreen, 2000);
 })();
 </script>
 </body>
