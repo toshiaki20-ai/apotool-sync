@@ -14,7 +14,7 @@
         .hour-line { stroke: #BDBDBD; stroke-width: 0.8; }
     </style>
   <rect width="7598" height="8292" fill="#FFFFFF" />
-  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.04.02  20:41</text>
+  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.04.03  00:45</text>
   <text x="64" y="56" text-anchor="start" class="month-title">2026年4月</text>
   <rect x="64" y="68" width="120" height="50" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="124" y="92" text-anchor="middle" class="date-num" fill="#333333">1</text>
@@ -1379,10 +1379,10 @@
     <text x="3366.0" y="794" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
   </g>
   <text x="74" y="953" text-anchor="start" font-size="983" font-weight="900" fill="#000000" opacity="0.15" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif">4</text>
-  <rect x="184" y="68" width="120" height="974" fill="none" stroke="#1565C0" stroke-width="3" />
-  <rect x="184" y="68" width="120" height="50" fill="#1565C0" opacity="0.9" rx="0" />
-  <text x="244" y="92" text-anchor="middle" class="date-num" fill="#FFFFFF">2</text>
-  <text x="244" y="110" text-anchor="middle" class="date-dow" fill="#FFFFFF">木</text>
+  <rect x="304" y="68" width="120" height="974" fill="none" stroke="#1565C0" stroke-width="3" />
+  <rect x="304" y="68" width="120" height="50" fill="#1565C0" opacity="0.9" rx="0" />
+  <text x="364" y="92" text-anchor="middle" class="date-num" fill="#FFFFFF">3</text>
+  <text x="364" y="110" text-anchor="middle" class="date-dow" fill="#FFFFFF">金</text>
   <text x="3858" y="56" text-anchor="start" class="month-title">2026年10月</text>
   <rect x="3858" y="68" width="120" height="50" fill="#FFEBEE" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="3918" y="92" text-anchor="middle" class="date-num" fill="#C62828">1</text>
@@ -2551,8 +2551,8 @@
   </clipPath>
   <rect x="2104.0" y="1344" width="119.0" height="56" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_178)">
-    <text x="2106.0" y="1356" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">石黒 裕美 /イシグロ ヒロミ /45歳(9</text>
-    <text x="2106.0" y="1366" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
+    <text x="2106.0" y="1356" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">石黒 裕美 /イシグロ ヒロミ /45歳(1</text>
+    <text x="2106.0" y="1366" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
     <text x="2106.0" y="1376" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~10:00</text>
   </g>
   <clipPath id="clip_179">
@@ -4523,7 +4523,7 @@
   <rect x="2824.0" y="2654" width="119.0" height="56" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_329)">
     <text x="2826.0" y="2666" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">橋本 勝行 /ハシモト カツユキ /57歳(</text>
-    <text x="2826.0" y="2676" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">1) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
+    <text x="2826.0" y="2676" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">2) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
     <text x="2826.0" y="2686" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">14:00~15:00</text>
   </g>
   <clipPath id="clip_330">
@@ -5536,7 +5536,7 @@
   <rect x="1144.0" y="3404" width="119.0" height="112" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_372)">
     <text x="1146.0" y="3416" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">岩本 雄一郎 /イワモト ユウイチロウ /4</text>
-    <text x="1146.0" y="3426" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">7歳(6) /ｲﾝﾌﾟﾗﾝﾄ/OPE/ 院長</text>
+    <text x="1146.0" y="3426" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">7歳(7) /ｲﾝﾌﾟﾗﾝﾄ/OPE/ 院長</text>
     <text x="1146.0" y="3436" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">執刀希望</text>
     <text x="1146.0" y="3446" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~11:00</text>
   </g>
