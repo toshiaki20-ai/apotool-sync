@@ -14,7 +14,7 @@
         .hour-line { stroke: #BDBDBD; stroke-width: 0.8; }
     </style>
   <rect width="7598" height="8292" fill="#FFFFFF" />
-  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.04.05  23:10</text>
+  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.04.06  00:59</text>
   <text x="64" y="56" text-anchor="start" class="month-title">2026年4月</text>
   <rect x="64" y="68" width="120" height="50" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="124" y="92" text-anchor="middle" class="date-num" fill="#333333">1</text>
@@ -1492,10 +1492,10 @@
     <text x="3366.0" y="794" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
   </g>
   <text x="74" y="953" text-anchor="start" font-size="983" font-weight="900" fill="#000000" opacity="0.15" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif">4</text>
-  <rect x="544" y="68" width="120" height="974" fill="none" stroke="#1565C0" stroke-width="3" />
-  <rect x="544" y="68" width="120" height="50" fill="#1565C0" opacity="0.9" rx="0" />
-  <text x="604" y="92" text-anchor="middle" class="date-num" fill="#FFFFFF">5</text>
-  <text x="604" y="110" text-anchor="middle" class="date-dow" fill="#FFFFFF">日</text>
+  <rect x="664" y="68" width="120" height="974" fill="none" stroke="#1565C0" stroke-width="3" />
+  <rect x="664" y="68" width="120" height="50" fill="#1565C0" opacity="0.9" rx="0" />
+  <text x="724" y="92" text-anchor="middle" class="date-num" fill="#FFFFFF">6</text>
+  <text x="724" y="110" text-anchor="middle" class="date-dow" fill="#FFFFFF">月</text>
   <text x="3858" y="56" text-anchor="start" class="month-title">2026年10月</text>
   <rect x="3858" y="68" width="120" height="50" fill="#FFEBEE" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="3918" y="92" text-anchor="middle" class="date-num" fill="#C62828">1</text>
@@ -2918,7 +2918,7 @@
   </clipPath>
   <rect x="2944.0" y="1344" width="119.0" height="112" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_218)">
-    <text x="2946.0" y="1356" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">宮坂 薫 /ミヤサカ カオル /63歳(0)</text>
+    <text x="2946.0" y="1356" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">宮坂 薫 /ミヤサカ カオル /63歳(1)</text>
     <text x="2946.0" y="1366" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal"> /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
     <text x="2946.0" y="1376" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~11:00</text>
   </g>
@@ -3997,7 +3997,7 @@
   </clipPath>
   <rect x="184.0" y="2374" width="119.0" height="112" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_270)">
-    <text x="186.0" y="2386" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">平手 絢子 /ヒラテ ジュンコ /45歳(1</text>
+    <text x="186.0" y="2386" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">平手 絢子 /ヒラテ ジュンコ /45歳(2</text>
     <text x="186.0" y="2396" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
     <text x="186.0" y="2406" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~11:00</text>
   </g>
@@ -5582,8 +5582,8 @@
   </clipPath>
   <rect x="424.0" y="3404" width="119.0" height="112" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_377)">
-    <text x="426.0" y="3416" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">木村 友妃子 /キムラ ユキコ /59歳(9</text>
-    <text x="426.0" y="3426" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
+    <text x="426.0" y="3416" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">木村 友妃子 /キムラ ユキコ /59歳(1</text>
+    <text x="426.0" y="3426" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
     <text x="426.0" y="3436" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~11:00</text>
   </g>
   <clipPath id="clip_378">
