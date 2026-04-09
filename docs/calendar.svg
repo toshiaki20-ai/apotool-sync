@@ -14,7 +14,7 @@
         .hour-line { stroke: #BDBDBD; stroke-width: 0.8; }
     </style>
   <rect width="7598" height="8292" fill="#FFFFFF" />
-  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.04.09  21:18</text>
+  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.04.10  01:56</text>
   <text x="64" y="56" text-anchor="start" class="month-title">2026年4月</text>
   <rect x="64" y="68" width="120" height="50" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="124" y="92" text-anchor="middle" class="date-num" fill="#333333">1</text>
@@ -405,8 +405,8 @@
   </clipPath>
   <rect x="304.0" y="314" width="119.0" height="168" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_9)">
-    <text x="306.0" y="326" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">吉澤 俊貴 /ヨシザワ トシキ /32歳(1</text>
-    <text x="306.0" y="336" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">1) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
+    <text x="306.0" y="326" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">吉澤 俊貴 /ヨシザワ トシキ /33歳(0</text>
+    <text x="306.0" y="336" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
     <text x="306.0" y="346" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~12:00</text>
   </g>
   <clipPath id="clip_10">
@@ -609,7 +609,7 @@
   </clipPath>
   <rect x="784.0" y="426" width="119.0" height="56" fill="#039BE5" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_31)">
-    <text x="786.0" y="438" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">北田 雄士 /キタダ ユウシ /43歳(10</text>
+    <text x="786.0" y="438" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">北田 雄士 /キタダ ユウシ /43歳(11</text>
     <text x="786.0" y="448" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /自費初診/インプラント初診/ AO4上</text>
     <text x="786.0" y="458" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">下考えてる金額的な面もあるので片側だけとかも</text>
     <text x="786.0" y="468" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">ありなのか？デンタルロ...</text>
@@ -1502,10 +1502,10 @@
     <text x="3366.0" y="794" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
   </g>
   <text x="74" y="953" text-anchor="start" font-size="983" font-weight="900" fill="#000000" opacity="0.15" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif">4</text>
-  <rect x="1024" y="68" width="120" height="974" fill="none" stroke="#1565C0" stroke-width="3" />
-  <rect x="1024" y="68" width="120" height="50" fill="#1565C0" opacity="0.9" rx="0" />
-  <text x="1084" y="92" text-anchor="middle" class="date-num" fill="#FFFFFF">9</text>
-  <text x="1084" y="110" text-anchor="middle" class="date-dow" fill="#FFFFFF">木</text>
+  <rect x="1144" y="68" width="120" height="974" fill="none" stroke="#1565C0" stroke-width="3" />
+  <rect x="1144" y="68" width="120" height="50" fill="#1565C0" opacity="0.9" rx="0" />
+  <text x="1204" y="92" text-anchor="middle" class="date-num" fill="#FFFFFF">10</text>
+  <text x="1204" y="110" text-anchor="middle" class="date-dow" fill="#FFFFFF">金</text>
   <text x="3858" y="56" text-anchor="start" class="month-title">2026年10月</text>
   <rect x="3858" y="68" width="120" height="50" fill="#FFEBEE" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="3918" y="92" text-anchor="middle" class="date-num" fill="#C62828">1</text>
@@ -5919,7 +5919,7 @@
   </clipPath>
   <rect x="3304.0" y="3684" width="119.0" height="112" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_415)">
-    <text x="3306.0" y="3696" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">山田 由恵 /ヤマダ ヨシエ /49歳(7)</text>
+    <text x="3306.0" y="3696" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">山田 由恵 /ヤマダ ヨシエ /49歳(8)</text>
     <text x="3306.0" y="3706" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal"> /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
     <text x="3306.0" y="3716" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">14:00~16:00</text>
   </g>
