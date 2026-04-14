@@ -14,7 +14,7 @@
         .hour-line { stroke: #BDBDBD; stroke-width: 0.8; }
     </style>
   <rect width="7598" height="8292" fill="#FFFFFF" />
-  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.04.14  19:55</text>
+  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.04.15  00:58</text>
   <text x="64" y="56" text-anchor="start" class="month-title">2026年4月</text>
   <rect x="64" y="68" width="120" height="50" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="124" y="92" text-anchor="middle" class="date-num" fill="#333333">1</text>
@@ -1502,7 +1502,7 @@
   </clipPath>
   <rect x="3184.0" y="594" width="119.0" height="56" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_129)">
-    <text x="3186.0" y="606" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">中井 稜 /ナカイ リヨウ /34歳(10)</text>
+    <text x="3186.0" y="606" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">中井 稜 /ナカイ リヨウ /34歳(11)</text>
     <text x="3186.0" y="616" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal"> /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
     <text x="3186.0" y="626" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">14:00~15:00</text>
   </g>
@@ -1588,10 +1588,10 @@
     <text x="3366.0" y="794" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
   </g>
   <text x="74" y="953" text-anchor="start" font-size="983" font-weight="900" fill="#000000" opacity="0.15" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif">4</text>
-  <rect x="1624" y="68" width="120" height="974" fill="none" stroke="#1565C0" stroke-width="3" />
-  <rect x="1624" y="68" width="120" height="50" fill="#1565C0" opacity="0.9" rx="0" />
-  <text x="1684" y="92" text-anchor="middle" class="date-num" fill="#FFFFFF">14</text>
-  <text x="1684" y="110" text-anchor="middle" class="date-dow" fill="#FFFFFF">火</text>
+  <rect x="1744" y="68" width="120" height="974" fill="none" stroke="#1565C0" stroke-width="3" />
+  <rect x="1744" y="68" width="120" height="50" fill="#1565C0" opacity="0.9" rx="0" />
+  <text x="1804" y="92" text-anchor="middle" class="date-num" fill="#FFFFFF">15</text>
+  <text x="1804" y="110" text-anchor="middle" class="date-dow" fill="#FFFFFF">水</text>
   <text x="3858" y="56" text-anchor="start" class="month-title">2026年10月</text>
   <rect x="3858" y="68" width="120" height="50" fill="#FFEBEE" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="3918" y="92" text-anchor="middle" class="date-num" fill="#C62828">1</text>
@@ -6068,7 +6068,7 @@
   <rect x="3304.0" y="3404" width="119.0" height="112" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_431)">
     <text x="3306.0" y="3416" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">浜島 守孝 /ハマジマ モリタカ /65歳(</text>
-    <text x="3306.0" y="3426" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">6) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
+    <text x="3306.0" y="3426" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">7) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
     <text x="3306.0" y="3436" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~11:00</text>
   </g>
   <clipPath id="clip_432">
