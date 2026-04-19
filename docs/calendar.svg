@@ -14,7 +14,7 @@
         .hour-line { stroke: #BDBDBD; stroke-width: 0.8; }
     </style>
   <rect width="7598" height="8292" fill="#FFFFFF" />
-  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.04.20  06:06</text>
+  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.04.20  07:01</text>
   <text x="64" y="56" text-anchor="start" class="month-title">2026年4月</text>
   <rect x="64" y="68" width="120" height="50" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="124" y="92" text-anchor="middle" class="date-num" fill="#333333">1</text>
@@ -1213,13 +1213,13 @@
     <text x="2406.0" y="738" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
   </g>
   <clipPath id="clip_97">
-    <rect x="2344.0" y="314" width="119.0" height="112" />
+    <rect x="2344.0" y="314" width="119.0" height="84" />
   </clipPath>
-  <rect x="2344.0" y="314" width="119.0" height="112" fill="#D50000" rx="2" opacity="0.85" />
+  <rect x="2344.0" y="314" width="119.0" height="84" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_97)">
     <text x="2346.0" y="326" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">安積 利江 /アヅミ リエ /49歳(5) </text>
     <text x="2346.0" y="336" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">/ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
-    <text x="2346.0" y="346" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~11:00</text>
+    <text x="2346.0" y="346" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~10:30</text>
   </g>
   <clipPath id="clip_98">
     <rect x="2344.0" y="650" width="59.0" height="168" />
