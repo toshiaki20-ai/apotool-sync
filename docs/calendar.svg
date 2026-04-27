@@ -14,7 +14,7 @@
         .hour-line { stroke: #BDBDBD; stroke-width: 0.8; }
     </style>
   <rect width="7598" height="8292" fill="#FFFFFF" />
-  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.04.28  00:13</text>
+  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.04.28  05:09</text>
   <text x="64" y="56" text-anchor="start" class="month-title">2026年4月</text>
   <rect x="64" y="68" width="120" height="50" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="124" y="92" text-anchor="middle" class="date-num" fill="#333333">1</text>
@@ -7464,7 +7464,7 @@
   </clipPath>
   <rect x="64.0" y="4434" width="119.0" height="112" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_516)">
-    <text x="66.0" y="4446" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">伊藤 久仁代 /イトウ クニヨ /62歳(6</text>
+    <text x="66.0" y="4446" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">伊藤 久仁代 /イトウ クニヨ /62歳(7</text>
     <text x="66.0" y="4456" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
     <text x="66.0" y="4466" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~11:00</text>
   </g>
@@ -7674,7 +7674,7 @@
   </clipPath>
   <rect x="3424.0" y="4434" width="119.0" height="112" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_541)">
-    <text x="3426.0" y="4446" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">伊藤 久仁代 /イトウ クニヨ /62歳(6</text>
+    <text x="3426.0" y="4446" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">伊藤 久仁代 /イトウ クニヨ /62歳(7</text>
     <text x="3426.0" y="4456" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
     <text x="3426.0" y="4466" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~11:00</text>
   </g>
@@ -8486,30 +8486,180 @@
     <text x="3066.0" y="6158" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">21:00~23:55</text>
   </g>
   <clipPath id="clip_566">
-    <rect x="3424.0" y="5464" width="59.0" height="168" />
+    <rect x="3304.0" y="5576" width="59.0" height="56" />
   </clipPath>
-  <rect x="3424.0" y="5464" width="59.0" height="168" fill="#F6BF26" rx="2" opacity="0.85" />
+  <rect x="3304.0" y="5576" width="59.0" height="56" fill="#F6BF26" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_566)">
-    <text x="3426.0" y="5476" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">BAB</text>
-    <text x="3426.0" y="5486" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~12:0</text>
-    <text x="3426.0" y="5496" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+    <text x="3306.0" y="5588" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">初診なし</text>
+    <text x="3306.0" y="5598" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">11:00~12:0</text>
+    <text x="3306.0" y="5608" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
   </g>
   <clipPath id="clip_567">
-    <rect x="3484.0" y="5464" width="59.0" height="168" />
+    <rect x="3364.0" y="5576" width="59.0" height="56" />
   </clipPath>
-  <rect x="3484.0" y="5464" width="59.0" height="168" fill="#F6BF26" rx="2" opacity="0.85" />
+  <rect x="3364.0" y="5576" width="59.0" height="56" fill="#F6BF26" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_567)">
-    <text x="3486.0" y="5476" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">BAB</text>
-    <text x="3486.0" y="5486" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~12:0</text>
-    <text x="3486.0" y="5496" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+    <text x="3366.0" y="5588" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">初診なし</text>
+    <text x="3366.0" y="5598" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">11:00~12:0</text>
+    <text x="3366.0" y="5608" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
   </g>
   <clipPath id="clip_568">
-    <rect x="3424.0" y="5688" width="119.0" height="56" />
+    <rect x="3304.0" y="5716" width="59.0" height="84" />
   </clipPath>
-  <rect x="3424.0" y="5688" width="119.0" height="56" fill="#F6BF26" rx="2" opacity="0.85" />
+  <rect x="3304.0" y="5716" width="59.0" height="84" fill="#F6BF26" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_568)">
-    <text x="3426.0" y="5700" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">午後オペなし</text>
-    <text x="3426.0" y="5710" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">13:00~14:00</text>
+    <text x="3306.0" y="5728" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">ユマニテク講義C組1</text>
+    <text x="3306.0" y="5738" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">3：30～15：00</text>
+    <text x="3306.0" y="5748" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">13:30~15:0</text>
+    <text x="3306.0" y="5758" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_569">
+    <rect x="3364.0" y="5716" width="59.0" height="84" />
+  </clipPath>
+  <rect x="3364.0" y="5716" width="59.0" height="84" fill="#F6BF26" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_569)">
+    <text x="3366.0" y="5728" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">ユマニテク講義C組1</text>
+    <text x="3366.0" y="5738" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">3：30～15：00</text>
+    <text x="3366.0" y="5748" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">13:30~15:0</text>
+    <text x="3366.0" y="5758" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_570">
+    <rect x="3304.0" y="5800" width="59.0" height="84" />
+  </clipPath>
+  <rect x="3304.0" y="5800" width="59.0" height="84" fill="#F6BF26" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_570)">
+    <text x="3306.0" y="5812" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">ユマニテク講義B組1</text>
+    <text x="3306.0" y="5822" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">5：10～16：40</text>
+    <text x="3306.0" y="5832" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">15:10~16:4</text>
+    <text x="3306.0" y="5842" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_571">
+    <rect x="3364.0" y="5800" width="59.0" height="84" />
+  </clipPath>
+  <rect x="3364.0" y="5800" width="59.0" height="84" fill="#F6BF26" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_571)">
+    <text x="3366.0" y="5812" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">ユマニテク講義B組1</text>
+    <text x="3366.0" y="5822" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">5：10～16：40</text>
+    <text x="3366.0" y="5832" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">15:10~16:4</text>
+    <text x="3366.0" y="5842" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_572">
+    <rect x="3304.0" y="5912" width="59.0" height="56" />
+  </clipPath>
+  <rect x="3304.0" y="5912" width="59.0" height="56" fill="#F6BF26" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_572)">
+    <text x="3306.0" y="5924" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">初診なし</text>
+    <text x="3306.0" y="5934" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">17:00~18:0</text>
+    <text x="3306.0" y="5944" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_573">
+    <rect x="3364.0" y="5912" width="59.0" height="56" />
+  </clipPath>
+  <rect x="3364.0" y="5912" width="59.0" height="56" fill="#F6BF26" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_573)">
+    <text x="3366.0" y="5924" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">初診なし</text>
+    <text x="3366.0" y="5934" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">17:00~18:0</text>
+    <text x="3366.0" y="5944" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_574">
+    <rect x="3424.0" y="5576" width="59.0" height="56" />
+  </clipPath>
+  <rect x="3424.0" y="5576" width="59.0" height="56" fill="#F6BF26" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_574)">
+    <text x="3426.0" y="5588" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">初診なし</text>
+    <text x="3426.0" y="5598" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">11:00~12:0</text>
+    <text x="3426.0" y="5608" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_575">
+    <rect x="3484.0" y="5576" width="59.0" height="56" />
+  </clipPath>
+  <rect x="3484.0" y="5576" width="59.0" height="56" fill="#F6BF26" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_575)">
+    <text x="3486.0" y="5588" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">初診なし</text>
+    <text x="3486.0" y="5598" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">11:00~12:0</text>
+    <text x="3486.0" y="5608" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_576">
+    <rect x="3424.0" y="5716" width="59.0" height="84" />
+  </clipPath>
+  <rect x="3424.0" y="5716" width="59.0" height="84" fill="#F6BF26" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_576)">
+    <text x="3426.0" y="5728" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">ユマニテク講義A組1</text>
+    <text x="3426.0" y="5738" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">3：30～15：00</text>
+    <text x="3426.0" y="5748" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">13:30~15:0</text>
+    <text x="3426.0" y="5758" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_577">
+    <rect x="3484.0" y="5716" width="59.0" height="84" />
+  </clipPath>
+  <rect x="3484.0" y="5716" width="59.0" height="84" fill="#F6BF26" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_577)">
+    <text x="3486.0" y="5728" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">ユマニテク講義A組1</text>
+    <text x="3486.0" y="5738" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">3：30～15：00</text>
+    <text x="3486.0" y="5748" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">13:30~15:0</text>
+    <text x="3486.0" y="5758" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_578">
+    <rect x="3424.0" y="5800" width="59.0" height="56" />
+  </clipPath>
+  <rect x="3424.0" y="5800" width="59.0" height="56" fill="#F6BF26" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_578)">
+    <text x="3426.0" y="5812" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">初診なし</text>
+    <text x="3426.0" y="5822" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">15:00~16:0</text>
+    <text x="3426.0" y="5832" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_579">
+    <rect x="3484.0" y="5800" width="59.0" height="56" />
+  </clipPath>
+  <rect x="3484.0" y="5800" width="59.0" height="56" fill="#F6BF26" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_579)">
+    <text x="3486.0" y="5812" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">初診なし</text>
+    <text x="3486.0" y="5822" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">15:00~16:0</text>
+    <text x="3486.0" y="5832" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_580">
+    <rect x="3424.0" y="5912" width="59.0" height="56" />
+  </clipPath>
+  <rect x="3424.0" y="5912" width="59.0" height="56" fill="#F6BF26" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_580)">
+    <text x="3426.0" y="5924" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">初診なし</text>
+    <text x="3426.0" y="5934" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">17:00~18:0</text>
+    <text x="3426.0" y="5944" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_581">
+    <rect x="3484.0" y="5912" width="59.0" height="56" />
+  </clipPath>
+  <rect x="3484.0" y="5912" width="59.0" height="56" fill="#F6BF26" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_581)">
+    <text x="3486.0" y="5924" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">初診なし</text>
+    <text x="3486.0" y="5934" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">17:00~18:0</text>
+    <text x="3486.0" y="5944" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_582">
+    <rect x="3544.0" y="5464" width="59.0" height="168" />
+  </clipPath>
+  <rect x="3544.0" y="5464" width="59.0" height="168" fill="#F6BF26" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_582)">
+    <text x="3546.0" y="5476" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">BAB</text>
+    <text x="3546.0" y="5486" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~12:0</text>
+    <text x="3546.0" y="5496" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_583">
+    <rect x="3604.0" y="5464" width="59.0" height="168" />
+  </clipPath>
+  <rect x="3604.0" y="5464" width="59.0" height="168" fill="#F6BF26" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_583)">
+    <text x="3606.0" y="5476" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">BAB</text>
+    <text x="3606.0" y="5486" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~12:0</text>
+    <text x="3606.0" y="5496" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_584">
+    <rect x="3544.0" y="5688" width="119.0" height="56" />
+  </clipPath>
+  <rect x="3544.0" y="5688" width="119.0" height="56" fill="#F6BF26" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_584)">
+    <text x="3546.0" y="5700" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">午後オペなし</text>
+    <text x="3546.0" y="5710" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">13:00~14:00</text>
   </g>
   <text x="74" y="6103" text-anchor="start" font-size="983" font-weight="900" fill="#000000" opacity="0.15" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif">9</text>
   <text x="3858" y="5206" text-anchor="start" class="month-title">2027年3月</text>
@@ -8827,19 +8977,19 @@
   <line x1="7338" y1="5268" x2="7338" y2="6192" stroke="#E0E0E0" stroke-width="0.5" />
   <line x1="7458" y1="5268" x2="7458" y2="6192" stroke="#E0E0E0" stroke-width="0.5" />
   <line x1="7578" y1="5268" x2="7578" y2="6192" stroke="#E0E0E0" stroke-width="0.5" />
-  <clipPath id="clip_569">
+  <clipPath id="clip_585">
     <rect x="6138.0" y="6136" width="119.0" height="42" />
   </clipPath>
   <rect x="6138.0" y="6136" width="119.0" height="42" fill="#3F51B5" rx="2" opacity="0.85" />
-  <g clip-path="url(#clip_569)">
+  <g clip-path="url(#clip_585)">
     <text x="6140.0" y="6148" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">極勉強会</text>
     <text x="6140.0" y="6158" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">21:00~23:55</text>
   </g>
-  <clipPath id="clip_570">
+  <clipPath id="clip_586">
     <rect x="6978.0" y="6136" width="119.0" height="42" />
   </clipPath>
   <rect x="6978.0" y="6136" width="119.0" height="42" fill="#3F51B5" rx="2" opacity="0.85" />
-  <g clip-path="url(#clip_570)">
+  <g clip-path="url(#clip_586)">
     <text x="6980.0" y="6148" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">極勉強会</text>
     <text x="6980.0" y="6158" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">21:00~23:55</text>
   </g>
@@ -9151,19 +9301,19 @@
   <line x1="7218" y1="6298" x2="7218" y2="7222" stroke="#E0E0E0" stroke-width="0.5" />
   <line x1="7338" y1="6298" x2="7338" y2="7222" stroke="#E0E0E0" stroke-width="0.5" />
   <line x1="7458" y1="6298" x2="7458" y2="7222" stroke="#E0E0E0" stroke-width="0.5" />
-  <clipPath id="clip_571">
+  <clipPath id="clip_587">
     <rect x="5778.0" y="7166" width="119.0" height="42" />
   </clipPath>
   <rect x="5778.0" y="7166" width="119.0" height="42" fill="#3F51B5" rx="2" opacity="0.85" />
-  <g clip-path="url(#clip_571)">
+  <g clip-path="url(#clip_587)">
     <text x="5780.0" y="7178" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">極勉強会</text>
     <text x="5780.0" y="7188" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">21:00~23:55</text>
   </g>
-  <clipPath id="clip_572">
+  <clipPath id="clip_588">
     <rect x="6618.0" y="7166" width="119.0" height="42" />
   </clipPath>
   <rect x="6618.0" y="7166" width="119.0" height="42" fill="#3F51B5" rx="2" opacity="0.85" />
-  <g clip-path="url(#clip_572)">
+  <g clip-path="url(#clip_588)">
     <text x="6620.0" y="7178" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">極勉強会</text>
     <text x="6620.0" y="7188" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">21:00~23:55</text>
   </g>
@@ -9477,19 +9627,19 @@
   <line x1="7338" y1="7328" x2="7338" y2="8252" stroke="#E0E0E0" stroke-width="0.5" />
   <line x1="7458" y1="7278" x2="7458" y2="8252" stroke="#999999" stroke-width="1.5" />
   <line x1="7578" y1="7328" x2="7578" y2="8252" stroke="#E0E0E0" stroke-width="0.5" />
-  <clipPath id="clip_573">
+  <clipPath id="clip_589">
     <rect x="5538.0" y="8196" width="119.0" height="42" />
   </clipPath>
   <rect x="5538.0" y="8196" width="119.0" height="42" fill="#3F51B5" rx="2" opacity="0.85" />
-  <g clip-path="url(#clip_573)">
+  <g clip-path="url(#clip_589)">
     <text x="5540.0" y="8208" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">極勉強会</text>
     <text x="5540.0" y="8218" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">21:00~23:55</text>
   </g>
-  <clipPath id="clip_574">
+  <clipPath id="clip_590">
     <rect x="6378.0" y="8196" width="119.0" height="42" />
   </clipPath>
   <rect x="6378.0" y="8196" width="119.0" height="42" fill="#3F51B5" rx="2" opacity="0.85" />
-  <g clip-path="url(#clip_574)">
+  <g clip-path="url(#clip_590)">
     <text x="6380.0" y="8208" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">極勉強会</text>
     <text x="6380.0" y="8218" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">21:00~23:55</text>
   </g>
