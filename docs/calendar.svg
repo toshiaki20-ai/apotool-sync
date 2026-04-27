@@ -14,7 +14,7 @@
         .hour-line { stroke: #BDBDBD; stroke-width: 0.8; }
     </style>
   <rect width="7598" height="8292" fill="#FFFFFF" />
-  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.04.27  09:10</text>
+  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.04.27  13:10</text>
   <text x="64" y="56" text-anchor="start" class="month-title">2026年4月</text>
   <rect x="64" y="68" width="120" height="50" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="124" y="92" text-anchor="middle" class="date-num" fill="#333333">1</text>
@@ -2750,8 +2750,9 @@
   <rect x="1384.0" y="1344" width="119.0" height="168" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_198)">
     <text x="1386.0" y="1356" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">松山 直美 /マツヤマ ナオミ /61歳(8</text>
-    <text x="1386.0" y="1366" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
-    <text x="1386.0" y="1376" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~12:00</text>
+    <text x="1386.0" y="1366" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /ｲﾝﾌﾟﾗﾝﾄ/OPE/ コンサルも(</text>
+    <text x="1386.0" y="1376" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">カルテ見てください)</text>
+    <text x="1386.0" y="1386" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~12:00</text>
   </g>
   <clipPath id="clip_199">
     <rect x="1384.0" y="1792" width="59.0" height="56" />
