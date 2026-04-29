@@ -14,7 +14,7 @@
         .hour-line { stroke: #BDBDBD; stroke-width: 0.8; }
     </style>
   <rect width="7598" height="8292" fill="#FFFFFF" />
-  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.04.29  22:08</text>
+  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.04.30  00:38</text>
   <text x="64" y="56" text-anchor="start" class="month-title">2026年4月</text>
   <rect x="64" y="68" width="120" height="50" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="124" y="92" text-anchor="middle" class="date-num" fill="#333333">1</text>
@@ -792,7 +792,7 @@
   </clipPath>
   <rect x="1264.0" y="314" width="119.0" height="112" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_51)">
-    <text x="1266.0" y="326" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">布目 奈美江 /ヌノメ ナミエ /62歳(3</text>
+    <text x="1266.0" y="326" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">布目 奈美江 /ヌノメ ナミエ /62歳(4</text>
     <text x="1266.0" y="336" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
     <text x="1266.0" y="346" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~11:00</text>
   </g>
@@ -1713,10 +1713,10 @@
     <text x="3546.0" y="728" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">16:00~17:00</text>
   </g>
   <text x="74" y="953" text-anchor="start" font-size="983" font-weight="900" fill="#000000" opacity="0.15" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif">4</text>
-  <rect x="3424" y="68" width="120" height="974" fill="none" stroke="#1565C0" stroke-width="3" />
-  <rect x="3424" y="68" width="120" height="50" fill="#1565C0" opacity="0.9" rx="0" />
-  <text x="3484" y="92" text-anchor="middle" class="date-num" fill="#FFFFFF">29</text>
-  <text x="3484" y="110" text-anchor="middle" class="date-dow" fill="#FFFFFF">水 昭和の日</text>
+  <rect x="3544" y="68" width="120" height="974" fill="none" stroke="#1565C0" stroke-width="3" />
+  <rect x="3544" y="68" width="120" height="50" fill="#1565C0" opacity="0.9" rx="0" />
+  <text x="3604" y="92" text-anchor="middle" class="date-num" fill="#FFFFFF">30</text>
+  <text x="3604" y="110" text-anchor="middle" class="date-dow" fill="#FFFFFF">木</text>
   <text x="3858" y="56" text-anchor="start" class="month-title">2026年10月</text>
   <rect x="3858" y="68" width="120" height="50" fill="#FFEBEE" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="3918" y="92" text-anchor="middle" class="date-num" fill="#C62828">1</text>
@@ -4637,10 +4637,10 @@
   </clipPath>
   <rect x="1504.0" y="2374" width="119.0" height="112" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_341)">
-    <text x="1506.0" y="2386" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">葛原 守 /クズハラ マモル /58歳(9)</text>
-    <text x="1506.0" y="2396" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal"> /ｲﾝﾌﾟﾗﾝﾄ/OPE/ ご本人の希望で</text>
-    <text x="1506.0" y="2406" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">6月までope延期。opeのキャンセル連絡要</text>
-    <text x="1506.0" y="2416" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">らない。</text>
+    <text x="1506.0" y="2386" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">葛原 守 /クズハラ マモル /58歳(10</text>
+    <text x="1506.0" y="2396" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /ｲﾝﾌﾟﾗﾝﾄ/OPE/ ご本人の希望</text>
+    <text x="1506.0" y="2406" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">で6月までope延期。opeのキャンセル連絡</text>
+    <text x="1506.0" y="2416" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">要らない。</text>
     <text x="1506.0" y="2426" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~11:00</text>
   </g>
   <clipPath id="clip_342">
@@ -4900,7 +4900,7 @@
   </clipPath>
   <rect x="2584.0" y="2654" width="119.0" height="56" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_370)">
-    <text x="2586.0" y="2666" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">吉野 貴久 /ヨシノ タカヒサ /50歳(6</text>
+    <text x="2586.0" y="2666" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">吉野 貴久 /ヨシノ タカヒサ /50歳(7</text>
     <text x="2586.0" y="2676" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
     <text x="2586.0" y="2686" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">14:00~15:00</text>
   </g>
@@ -6329,7 +6329,7 @@
   </clipPath>
   <rect x="1624.0" y="3684" width="119.0" height="56" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_459)">
-    <text x="1626.0" y="3696" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">吉野 貴久 /ヨシノ タカヒサ /50歳(6</text>
+    <text x="1626.0" y="3696" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">吉野 貴久 /ヨシノ タカヒサ /50歳(7</text>
     <text x="1626.0" y="3706" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
     <text x="1626.0" y="3716" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">14:00~15:00</text>
   </g>
