@@ -14,7 +14,7 @@
         .hour-line { stroke: #BDBDBD; stroke-width: 0.8; }
     </style>
   <rect width="7598" height="8292" fill="#FFFFFF" />
-  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.05.12  17:29</text>
+  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.05.12  19:51</text>
   <text x="64" y="56" text-anchor="start" class="month-title">2026年5月</text>
   <rect x="64" y="68" width="120" height="50" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="124" y="92" text-anchor="middle" class="date-num" fill="#333333">1</text>
@@ -606,12 +606,13 @@
     <text x="1506.0" y="646" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">14:00~15:00</text>
   </g>
   <clipPath id="clip_31">
-    <rect x="1504.0" y="482" width="119.0" height="28" />
+    <rect x="1504.0" y="482" width="119.0" height="56" />
   </clipPath>
-  <rect x="1504.0" y="482" width="119.0" height="28" fill="#4285F4" rx="2" opacity="0.85" />
+  <rect x="1504.0" y="482" width="119.0" height="56" fill="#4285F4" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_31)">
-    <text x="1506.0" y="492" font-size="6" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">北田 雄士 /キタダ ユウシ /44歳(0) /ｺﾝｻﾙ/</text>
-    <text x="1506.0" y="500" font-size="6" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">12:00~12:30</text>
+    <text x="1506.0" y="494" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">北田 雄士 /キタダ ユウシ /44歳(0)</text>
+    <text x="1506.0" y="504" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal"> /ｺﾝｻﾙ/</text>
+    <text x="1506.0" y="514" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">12:00~13:00</text>
   </g>
   <clipPath id="clip_32">
     <rect x="1504.0" y="650" width="59.0" height="56" />
