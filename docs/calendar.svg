@@ -14,7 +14,7 @@
         .hour-line { stroke: #BDBDBD; stroke-width: 0.8; }
     </style>
   <rect width="7598" height="8292" fill="#FFFFFF" />
-  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.05.17  06:44</text>
+  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.05.17  07:41</text>
   <text x="64" y="56" text-anchor="start" class="month-title">2026年5月</text>
   <rect x="64" y="68" width="120" height="50" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="124" y="92" text-anchor="middle" class="date-num" fill="#333333">1</text>
@@ -1863,6 +1863,8 @@
     <text x="6260.0" y="998" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">極勉強会</text>
     <text x="6260.0" y="1008" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">21:00~23:55</text>
   </g>
+  <rect x="6379" y="119" width="118" height="12" fill="#7CB342" rx="2" opacity="0.85" />
+  <text x="6381" y="129" font-size="7" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif">塾　秋休み</text>
   <clipPath id="clip_136">
     <rect x="6618.0" y="314" width="59.0" height="504" />
   </clipPath>
@@ -5679,6 +5681,8 @@
     <text x="906.0" y="3360" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">連休前opeなし</text>
     <text x="906.0" y="3370" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">08:00~09:00</text>
   </g>
+  <rect x="1025" y="3209" width="118" height="12" fill="#7CB342" rx="2" opacity="0.85" />
+  <text x="1027" y="3219" font-size="7" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif">お盆休み</text>
   <clipPath id="clip_387">
     <rect x="1144.0" y="3404" width="119.0" height="504" />
   </clipPath>
