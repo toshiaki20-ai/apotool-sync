@@ -14,7 +14,7 @@
         .hour-line { stroke: #BDBDBD; stroke-width: 0.8; }
     </style>
   <rect width="7598" height="8292" fill="#FFFFFF" />
-  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.06.16  22:15</text>
+  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.06.17  03:20</text>
   <text x="64" y="56" text-anchor="start" class="month-title">2026年6月</text>
   <rect x="64" y="68" width="120" height="50" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="124" y="92" text-anchor="middle" class="date-num" fill="#333333">1</text>
@@ -1915,10 +1915,10 @@
     <text x="3606.0" y="794" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
   </g>
   <text x="74" y="953" text-anchor="start" font-size="983" font-weight="900" fill="#000000" opacity="0.15" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif">6</text>
-  <rect x="1864" y="68" width="120" height="974" fill="none" stroke="#1565C0" stroke-width="3" />
-  <rect x="1864" y="68" width="120" height="50" fill="#1565C0" opacity="0.9" rx="0" />
-  <text x="1924" y="92" text-anchor="middle" class="date-num" fill="#FFFFFF">16</text>
-  <text x="1924" y="110" text-anchor="middle" class="date-dow" fill="#FFFFFF">火</text>
+  <rect x="1984" y="68" width="120" height="974" fill="none" stroke="#1565C0" stroke-width="3" />
+  <rect x="1984" y="68" width="120" height="50" fill="#1565C0" opacity="0.9" rx="0" />
+  <text x="2044" y="92" text-anchor="middle" class="date-num" fill="#FFFFFF">17</text>
+  <text x="2044" y="110" text-anchor="middle" class="date-dow" fill="#FFFFFF">水</text>
   <text x="3858" y="56" text-anchor="start" class="month-title">2026年12月</text>
   <rect x="3858" y="68" width="120" height="50" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="3918" y="92" text-anchor="middle" class="date-num" fill="#333333">1</text>
@@ -4196,7 +4196,7 @@
   </clipPath>
   <rect x="3424.0" y="1344" width="119.0" height="112" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_358)">
-    <text x="3426.0" y="1356" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">津崎 修治 /ツザキ シュウジ /67歳(3</text>
+    <text x="3426.0" y="1356" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">津崎 修治 /ツザキ シュウジ /67歳(4</text>
     <text x="3426.0" y="1366" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /ｲﾝﾌﾟﾗﾝﾄ/OPE/ 感染症</text>
     <text x="3426.0" y="1376" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~11:00</text>
   </g>
@@ -4272,7 +4272,7 @@
   </clipPath>
   <rect x="3664.0" y="1344" width="119.0" height="112" fill="#D50000" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_366)">
-    <text x="3666.0" y="1356" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">杉浦 光哉 /スギウラ ミヤ /22歳(10</text>
+    <text x="3666.0" y="1356" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">杉浦 光哉 /スギウラ ミヤ /22歳(11</text>
     <text x="3666.0" y="1366" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /ｲﾝﾌﾟﾗﾝﾄ/OPE/</text>
     <text x="3666.0" y="1376" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">09:00~11:00</text>
   </g>
