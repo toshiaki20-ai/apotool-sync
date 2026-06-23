@@ -14,7 +14,7 @@
         .hour-line { stroke: #BDBDBD; stroke-width: 0.8; }
     </style>
   <rect width="7598" height="8292" fill="#FFFFFF" />
-  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.06.23  13:42</text>
+  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.06.23  17:30</text>
   <text x="64" y="56" text-anchor="start" class="month-title">2026年6月</text>
   <rect x="64" y="68" width="120" height="50" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="124" y="92" text-anchor="middle" class="date-num" fill="#333333">1</text>
@@ -1560,10 +1560,10 @@
   </clipPath>
   <rect x="2704.0" y="706" width="119.0" height="56" fill="#039BE5" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_136)">
-    <text x="2706.0" y="718" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">山本育夫 /ヤマモトイクオ /70歳(1) </text>
-    <text x="2706.0" y="728" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">/自費初診/インプラント初診/ [Web予約</text>
-    <text x="2706.0" y="738" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">新規患者]【インプラント相談】下が2本、上が</text>
-    <text x="2706.0" y="748" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">一本、歯がありません。...</text>
+    <text x="2706.0" y="718" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">山本 育夫 /ヤマモト イクオ /70歳(1</text>
+    <text x="2706.0" y="728" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /自費初診/インプラント初診/ [Web</text>
+    <text x="2706.0" y="738" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">予約新規患者]【インプラント相談】下が2本、</text>
+    <text x="2706.0" y="748" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">上が一本、歯がありませ...</text>
     <text x="2706.0" y="758" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">16:00~17:00</text>
   </g>
   <clipPath id="clip_137">
