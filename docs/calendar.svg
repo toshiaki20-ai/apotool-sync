@@ -14,7 +14,7 @@
         .hour-line { stroke: #BDBDBD; stroke-width: 0.8; }
     </style>
   <rect width="7598" height="8292" fill="#FFFFFF" />
-  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.07.22  16:35</text>
+  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.07.22  19:03</text>
   <text x="64" y="56" text-anchor="start" class="month-title">2026年7月</text>
   <rect x="64" y="68" width="120" height="50" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="124" y="92" text-anchor="middle" class="date-num" fill="#333333">1</text>
@@ -3241,9 +3241,8 @@
   </clipPath>
   <rect x="3064.0" y="1568" width="119.0" height="56" fill="#A79B8E" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_252)">
-    <text x="3066.0" y="1580" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">子ども食堂＆BABopeのため午後オペ入れな</text>
-    <text x="3066.0" y="1590" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">い</text>
-    <text x="3066.0" y="1600" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">13:00~14:00</text>
+    <text x="3066.0" y="1580" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">BABopeのため午後オペ入れない</text>
+    <text x="3066.0" y="1590" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">13:00~14:00</text>
   </g>
   <clipPath id="clip_253">
     <rect x="3064.0" y="1680" width="59.0" height="56" />
