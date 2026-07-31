@@ -14,7 +14,7 @@
         .hour-line { stroke: #BDBDBD; stroke-width: 0.8; }
     </style>
   <rect width="7598" height="8292" fill="#FFFFFF" />
-  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.08.01  00:40</text>
+  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.08.01  05:19</text>
   <text x="64" y="56" text-anchor="start" class="month-title">2026年8月</text>
   <rect x="64" y="68" width="120" height="50" fill="#E3F2FD" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="124" y="92" text-anchor="middle" class="date-num" fill="#1565C0">1</text>
@@ -8728,18 +8728,38 @@
   <line x1="7338" y1="7328" x2="7338" y2="8252" stroke="#E0E0E0" stroke-width="0.5" />
   <line x1="7458" y1="7328" x2="7458" y2="8252" stroke="#E0E0E0" stroke-width="0.5" />
   <clipPath id="clip_489">
+    <rect x="4698.0" y="7804" width="59.0" height="224" />
+  </clipPath>
+  <rect x="4698.0" y="7804" width="59.0" height="224" fill="#EF6C00" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_489)">
+    <text x="4700.0" y="7816" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">//松浦 院内ミーテ</text>
+    <text x="4700.0" y="7826" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">ィング</text>
+    <text x="4700.0" y="7836" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">14:00~18:0</text>
+    <text x="4700.0" y="7846" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_490">
+    <rect x="4758.0" y="7804" width="59.0" height="224" />
+  </clipPath>
+  <rect x="4758.0" y="7804" width="59.0" height="224" fill="#EF6C00" rx="2" opacity="0.85" />
+  <g clip-path="url(#clip_490)">
+    <text x="4760.0" y="7816" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">//松浦 院内ミーテ</text>
+    <text x="4760.0" y="7826" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">ィング</text>
+    <text x="4760.0" y="7836" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">14:00~18:0</text>
+    <text x="4760.0" y="7846" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+  </g>
+  <clipPath id="clip_491">
     <rect x="5898.0" y="8196" width="119.0" height="42" />
   </clipPath>
   <rect x="5898.0" y="8196" width="119.0" height="42" fill="#3F51B5" rx="2" opacity="0.85" />
-  <g clip-path="url(#clip_489)">
+  <g clip-path="url(#clip_491)">
     <text x="5900.0" y="8208" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">極勉強会</text>
     <text x="5900.0" y="8218" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">21:00~23:55</text>
   </g>
-  <clipPath id="clip_490">
+  <clipPath id="clip_492">
     <rect x="6738.0" y="8196" width="119.0" height="42" />
   </clipPath>
   <rect x="6738.0" y="8196" width="119.0" height="42" fill="#3F51B5" rx="2" opacity="0.85" />
-  <g clip-path="url(#clip_490)">
+  <g clip-path="url(#clip_492)">
     <text x="6740.0" y="8208" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">極勉強会</text>
     <text x="6740.0" y="8218" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">21:00~23:55</text>
   </g>
