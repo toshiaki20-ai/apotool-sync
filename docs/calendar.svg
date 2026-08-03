@@ -14,7 +14,7 @@
         .hour-line { stroke: #BDBDBD; stroke-width: 0.8; }
     </style>
   <rect width="7598" height="8292" fill="#FFFFFF" />
-  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.08.03  10:08</text>
+  <text x="20" y="26" text-anchor="start" class="main-title">としあきカレンダー　　最終更新：2026.08.03  14:01</text>
   <text x="64" y="56" text-anchor="start" class="month-title">2026年8月</text>
   <rect x="64" y="68" width="120" height="50" fill="#E3F2FD" stroke="#BDBDBD" stroke-width="0.5" />
   <text x="124" y="92" text-anchor="middle" class="date-num" fill="#1565C0">1</text>
@@ -482,18 +482,20 @@
   </clipPath>
   <rect x="424.0" y="650" width="59.0" height="56" fill="#A79B8E" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_16)">
-    <text x="426.0" y="662" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">埋めない</text>
-    <text x="426.0" y="672" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">15:00~16:0</text>
-    <text x="426.0" y="682" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+    <text x="426.0" y="662" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">埋めない谷澤の写真チ</text>
+    <text x="426.0" y="672" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">ェックお願いします</text>
+    <text x="426.0" y="682" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">15:00~16:0</text>
+    <text x="426.0" y="692" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
   </g>
   <clipPath id="clip_17">
     <rect x="484.0" y="650" width="59.0" height="56" />
   </clipPath>
   <rect x="484.0" y="650" width="59.0" height="56" fill="#A79B8E" rx="2" opacity="0.85" />
   <g clip-path="url(#clip_17)">
-    <text x="486.0" y="662" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">埋めない</text>
-    <text x="486.0" y="672" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">15:00~16:0</text>
-    <text x="486.0" y="682" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
+    <text x="486.0" y="662" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">埋めない谷澤の写真チ</text>
+    <text x="486.0" y="672" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">ェックお願いします</text>
+    <text x="486.0" y="682" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">15:00~16:0</text>
+    <text x="486.0" y="692" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">0</text>
   </g>
   <clipPath id="clip_18">
     <rect x="424.0" y="762" width="59.0" height="56" />
@@ -645,8 +647,9 @@
   <g clip-path="url(#clip_34)">
     <text x="786.0" y="606" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="bold">櫻井 綾名 /サクライ アヤナ /36歳(7</text>
     <text x="786.0" y="616" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">) /ｲﾝﾌﾟﾗﾝﾄ/OPE/ 抜歯即時埋入</text>
-    <text x="786.0" y="626" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">（骨造成あり）領収書お渡し</text>
-    <text x="786.0" y="636" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">14:00~15:00</text>
+    <text x="786.0" y="626" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">（骨造成あり） ┗３ 術前にデンタル撮影領収</text>
+    <text x="786.0" y="636" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">書お渡し</text>
+    <text x="786.0" y="646" font-size="8" fill="#000000" font-family="'Noto Sans CJK JP', 'Noto Sans JP', sans-serif" font-weight="normal">14:00~15:00</text>
   </g>
   <clipPath id="clip_35">
     <rect x="784.0" y="846" width="119.0" height="84" />
