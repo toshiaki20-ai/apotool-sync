@@ -29,7 +29,37 @@ const WAIT_AFTER_JUMP = 2000;
 const WAIT_FOR_TABLE = 5000;
 const WAIT_AFTER_STAFF_BTN = 6000;
 
+// 一時的なアクセス制限に限り、時間を空けて再試行する。
+// 1回の同期で最大3回。失敗時のみ1分の待機を挟み、短時間の連続アクセスを避ける。
+const RETRY_DELAYS_MS = [0, 1 * 60 * 1000, 1 * 60 * 1000];
+const RETRYABLE_STATUS_CODES = new Set([403, 408, 429, 500, 502, 503, 504]);
+
+class RetryableApotoolError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = 'RetryableApotoolError';
+  }
+}
+
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+async function openCalendarPage(page) {
+  let response;
+  try {
+    response = await page.goto(CALENDAR_URL, { waitUntil: 'networkidle2', timeout: 30000 });
+  } catch (error) {
+    throw new RetryableApotoolError(`カレンダー画面への接続失敗: ${error.message}`);
+  }
+
+  const status = response ? response.status() : 0;
+  const title = await page.title().catch(() => '');
+  if (RETRYABLE_STATUS_CODES.has(status) || /(?:403|forbidden|service unavailable|gateway)/i.test(title)) {
+    throw new RetryableApotoolError(`カレンダー画面が一時的に利用不可: HTTP ${status || '不明'} / ${title || 'タイトル不明'}`);
+  }
+  if (status >= 400) {
+    throw new Error(`カレンダー画面の取得に失敗: HTTP ${status} / ${title || 'タイトル不明'}`);
+  }
+}
 
 function getTargetMonths() {
   const args = process.argv.slice(2).map(Number);
@@ -221,10 +251,10 @@ async function extractData(page) {
   }
 }
 
-// ===== メイン処理 =====
-(async () => {
+// ===== 1回の取得処理 =====
+async function runOnce(targetMonths, attempt) {
   const startTime = Date.now();
-  const targetMonths = getTargetMonths();
+  console.log(`\n[試行 ${attempt}/${RETRY_DELAYS_MS.length}]`);
   console.log(`[START] ${new Date().toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })}`);
   console.log(`[対象] ${targetMonths.map(m => `${m.year}/${m.month}`).join(', ')}`);
   console.log(`[出力] ${OUTPUT_FILE}`);
@@ -244,124 +274,153 @@ async function extractData(page) {
     launchOptions.executablePath = process.env.PUPPETEER_EXECUTABLE_PATH;
   }
   const browser = await puppeteer.launch(launchOptions);
-  const page = await browser.newPage();
-  await page.setViewport({ width: 1920, height: 1080 });
-  await page.emulateTimezone('Asia/Tokyo');
+  try {
+    const page = await browser.newPage();
+    await page.setViewport({ width: 1920, height: 1080 });
+    await page.emulateTimezone('Asia/Tokyo');
 
-  // ===== ログイン =====
-  console.log('\n[1] ログイン...');
-  await page.goto(LOGIN_URL, { waitUntil: 'networkidle2', timeout: 30000 });
-  await sleep(3000);
+    // ===== ログイン =====
+    console.log('\n[1] ログイン...');
+    await page.goto(LOGIN_URL, { waitUntil: 'networkidle2', timeout: 30000 });
+    await sleep(3000);
 
-  const emailInput = await page.$('input[type="text"], input[type="email"], input[name="email"]');
-  if (emailInput) {
-    await emailInput.click({ clickCount: 3 });
-    await emailInput.type(EMAIL, { delay: 30 });
-  }
-  const passInput = await page.$('input[type="password"]');
-  if (passInput) {
-    await passInput.click({ clickCount: 3 });
-    await passInput.type(PASSWORD, { delay: 30 });
-  }
-  const loginBtn = await page.$('button[type="submit"], input[type="submit"], button');
-  if (loginBtn) {
-    await loginBtn.click();
-  } else {
-    await page.keyboard.press('Enter');
-  }
+    const emailInput = await page.$('input[type="text"], input[type="email"], input[name="email"]');
+    if (emailInput) {
+      await emailInput.click({ clickCount: 3 });
+      await emailInput.type(EMAIL, { delay: 30 });
+    }
+    const passInput = await page.$('input[type="password"]');
+    if (passInput) {
+      await passInput.click({ clickCount: 3 });
+      await passInput.type(PASSWORD, { delay: 30 });
+    }
+    const loginBtn = await page.$('button[type="submit"], input[type="submit"], button');
+    if (loginBtn) {
+      await loginBtn.click();
+    } else {
+      await page.keyboard.press('Enter');
+    }
 
-  console.log('[1] ログイン送信、12秒待機...');
-  await sleep(WAIT_AFTER_LOGIN);
+    console.log('[1] ログイン送信、12秒待機...');
+    await sleep(WAIT_AFTER_LOGIN);
 
-  console.log('[1] カレンダーページに移動...');
-  await page.goto(CALENDAR_URL, { waitUntil: 'networkidle2', timeout: 30000 });
+    console.log('[1] カレンダーページに移動...');
+    await openCalendarPage(page);
 
-  // ===== UI完全ロード待ち =====
-  console.log('\n[2] UI完全ロード待ち...');
-  const uiReady = await waitForFullUI(page);
-  if (!uiReady) {
-    console.log('[ERROR] UIロードタイムアウト');
-    await browser.close();
-    process.exit(1);
-  }
+    // ===== UI完全ロード待ち =====
+    console.log('\n[2] UI完全ロード待ち...');
+    const uiReady = await waitForFullUI(page);
+    if (!uiReady) {
+      throw new Error('UIロードタイムアウト');
+    }
 
-  console.log('[2] 追加10秒待機...');
-  await sleep(10000);
+    console.log('[2] 追加10秒待機...');
+    await sleep(10000);
 
-  const initialDate = await getDisplayedDate(page);
-  console.log(`[2] 現在表示: ${initialDate ? initialDate.text : '不明'}`);
+    const initialDate = await getDisplayedDate(page);
+    console.log(`[2] 現在表示: ${initialDate ? initialDate.text : '不明'}`);
 
-  // ===== スタッフ表示に切り替え =====
-  console.log('\n[3] スタッフ表示に切り替え...');
-  await page.click('#staff_btn');
-  await sleep(WAIT_AFTER_STAFF_BTN);
-  console.log('[3] スタッフ表示切替完了');
+    // ===== スタッフ表示に切り替え =====
+    console.log('\n[3] スタッフ表示に切り替え...');
+    await page.click('#staff_btn');
+    await sleep(WAIT_AFTER_STAFF_BTN);
+    console.log('[3] スタッフ表示切替完了');
 
-  // ===== 各月のデータ抽出 =====
-  const allResults = {};
-  let totalSuccess = 0, totalSkip = 0;
+    // ===== 各月のデータ抽出 =====
+    const allResults = {};
+    let totalSuccess = 0, totalSkip = 0;
 
-  for (const monthInfo of targetMonths) {
-    const { year, month, daysInMonth } = monthInfo;
-    console.log(`\n[4] === ${year}年${month}月 (${daysInMonth}日間) ===`);
+    for (const monthInfo of targetMonths) {
+      const { year, month, daysInMonth } = monthInfo;
+      console.log(`\n[4] === ${year}年${month}月 (${daysInMonth}日間) ===`);
 
-    for (let day = 1; day <= daysInMonth; day++) {
-      const dateStr = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+      for (let day = 1; day <= daysInMonth; day++) {
+        const dateStr = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
 
-      const jumped = await jumpToDate(page, year, month, day);
-      if (!jumped) {
-        console.log(`  [${day}] ${dateStr} [SKIP] ジャンプ失敗`);
-        allResults[dateStr] = [];
-        totalSkip++;
-        continue;
+        const jumped = await jumpToDate(page, year, month, day);
+        if (!jumped) {
+          console.log(`  [${day}] ${dateStr} [SKIP] ジャンプ失敗`);
+          allResults[dateStr] = [];
+          totalSkip++;
+          continue;
+        }
+
+        const hasTable = await waitForTable(page);
+        if (!hasTable) {
+          console.log(`  [${day}] ${dateStr} → 休診日`);
+          allResults[dateStr] = [];
+          totalSkip++;
+          continue;
+        }
+
+        const data = await extractData(page);
+        if (data.found) {
+          allResults[dateStr] = data.events;
+          totalSuccess++;
+          console.log(`  [${day}] ${dateStr} → ${data.events.length}件`);
+        } else {
+          allResults[dateStr] = [];
+          totalSkip++;
+          console.log(`  [${day}] ${dateStr} → ${data.message}`);
+        }
+
+        if (day % 10 === 0 || day === daysInMonth) {
+          const partial = {
+            targetMonths: targetMonths.map(m => `${m.year}-${String(m.month).padStart(2, '0')}`),
+            extractedAt: new Date().toISOString(),
+            successCount: totalSuccess,
+            skipCount: totalSkip,
+            data: allResults
+          };
+          fs.writeFileSync(OUTPUT_FILE, JSON.stringify(partial, null, 2), 'utf-8');
+        }
       }
+    }
 
-      const hasTable = await waitForTable(page);
-      if (!hasTable) {
-        console.log(`  [${day}] ${dateStr} → 休診日`);
-        allResults[dateStr] = [];
-        totalSkip++;
-        continue;
-      }
+    // ===== 最終保存 =====
+    const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+    console.log(`\n[完了] 成功:${totalSuccess} スキップ:${totalSkip} 時間:${elapsed}秒`);
 
-      const data = await extractData(page);
-      if (data.found) {
-        allResults[dateStr] = data.events;
-        totalSuccess++;
-        console.log(`  [${day}] ${dateStr} → ${data.events.length}件`);
-      } else {
-        allResults[dateStr] = [];
-        totalSkip++;
-        console.log(`  [${day}] ${dateStr} → ${data.message}`);
-      }
+    const finalResult = {
+      targetMonths: targetMonths.map(m => `${m.year}-${String(m.month).padStart(2, '0')}`),
+      extractedAt: new Date().toISOString(),
+      elapsedSeconds: parseFloat(elapsed),
+      successCount: totalSuccess,
+      skipCount: totalSkip,
+      data: allResults
+    };
+    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(finalResult, null, 2), 'utf-8');
+    console.log(`[保存] ${OUTPUT_FILE}`);
+    return finalResult;
+  } finally {
+    await browser.close().catch(() => {});
+  }
+}
 
-      if (day % 10 === 0 || day === daysInMonth) {
-        const partial = {
-          targetMonths: targetMonths.map(m => `${m.year}-${String(m.month).padStart(2, '0')}`),
-          extractedAt: new Date().toISOString(),
-          successCount: totalSuccess,
-          skipCount: totalSkip,
-          data: allResults
-        };
-        fs.writeFileSync(OUTPUT_FILE, JSON.stringify(partial, null, 2), 'utf-8');
-      }
+// ===== 再試行制御 =====
+(async () => {
+  const targetMonths = getTargetMonths();
+  let lastError;
+
+  for (let index = 0; index < RETRY_DELAYS_MS.length; index++) {
+    const delayMs = RETRY_DELAYS_MS[index];
+    if (delayMs > 0) {
+      console.log(`\n[再試行待機] ${Math.round(delayMs / 60000)}分後に再試行します。`);
+      await sleep(delayMs);
+    }
+
+    try {
+      await runOnce(targetMonths, index + 1);
+      process.exit(0);
+    } catch (error) {
+      lastError = error;
+      const canRetry = error instanceof RetryableApotoolError && index < RETRY_DELAYS_MS.length - 1;
+      console.error(`[失敗] ${error.message}`);
+      if (!canRetry) break;
+      console.log('[再試行対象] 一時的なアクセス拒否または通信障害として扱います。');
     }
   }
 
-  // ===== 最終保存 =====
-  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-  console.log(`\n[完了] 成功:${totalSuccess} スキップ:${totalSkip} 時間:${elapsed}秒`);
-
-  const finalResult = {
-    targetMonths: targetMonths.map(m => `${m.year}-${String(m.month).padStart(2, '0')}`),
-    extractedAt: new Date().toISOString(),
-    elapsedSeconds: parseFloat(elapsed),
-    successCount: totalSuccess,
-    skipCount: totalSkip,
-    data: allResults
-  };
-  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(finalResult, null, 2), 'utf-8');
-  console.log(`[保存] ${OUTPUT_FILE}`);
-
-  await browser.close();
+  console.error(`[最終失敗] ${lastError ? lastError.message : '不明なエラー'}`);
+  process.exit(1);
 })();
