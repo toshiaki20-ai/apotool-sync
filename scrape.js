@@ -68,24 +68,46 @@ async function getDisplayedDate(page) {
   return null;
 }
 
+async function getUiState(page) {
+  return page.evaluate(() => {
+    const dateEl = document.querySelector('#target_date');
+    const dateText = dateEl ? dateEl.textContent.trim() : '';
+    return {
+      url: location.href,
+      title: document.title,
+      hasLoginForm: !!document.querySelector('input[type="password"]'),
+      hasRealDate: /202\d年/.test(dateText),
+      hasCalendar: typeof calendar !== 'undefined' && typeof calendar.setTargetDate === 'function',
+      hasStaffButton: !!document.querySelector('#staff_btn'),
+      hasDailyTable: !!document.querySelector('table.daily'),
+      dateText
+    };
+  });
+}
+
 async function waitForFullUI(page) {
-  for (let i = 0; i < 60; i++) {
+  const timeoutSeconds = 120;
+  let lastStatus = null;
+
+  for (let i = 0; i < timeoutSeconds; i++) {
     await sleep(1000);
     try {
-      const status = await page.evaluate(() => {
-        const dateEl = document.querySelector('#target_date');
-        const dateText = dateEl ? dateEl.textContent : '';
-        return {
-          hasRealDate: /202\d年/.test(dateText),
-          hasCalendar: typeof calendar !== 'undefined' && typeof calendar.setTargetDate === 'function',
-          dateText: dateText.trim()
-        };
-      });
-      if (status.hasRealDate && status.hasCalendar) {
+      const status = await getUiState(page);
+      lastStatus = status;
+      if (status.hasRealDate && status.hasCalendar && status.hasStaffButton) {
         console.log(`  UIロード完了 (${i + 1}秒) ${status.dateText}`);
         return true;
       }
-    } catch (e) { /* retry */ }
+      if ((i + 1) % 15 === 0) {
+        console.log(`  UI待機中 (${i + 1}秒): 日付=${status.hasRealDate}, calendar=${status.hasCalendar}, スタッフ=${status.hasStaffButton}, ログイン画面=${status.hasLoginForm}`);
+      }
+    } catch (e) {
+      if ((i + 1) % 15 === 0) console.log(`  UI確認リトライ: ${e.message}`);
+    }
+  }
+
+  if (lastStatus) {
+    console.error(`[DIAG] UI未準備: URL=${lastStatus.url}, title=${lastStatus.title}, 日付=${lastStatus.hasRealDate}, calendar=${lastStatus.hasCalendar}, スタッフ=${lastStatus.hasStaffButton}, テーブル=${lastStatus.hasDailyTable}, ログイン画面=${lastStatus.hasLoginForm}`);
   }
   return false;
 }
